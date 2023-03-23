@@ -1,6 +1,7 @@
 from flask import Flask,request,render_template,redirect
 from flask_mysqldb import MySQL
 import mysql.connector
+import webbrowser
 
 
 app=Flask(__name__)
@@ -41,7 +42,7 @@ def index():
 
         mysql.connection.commit();
 
-        return render_template("index.html")
+        return redirect("/")
 
 @app.route("/req",methods=["GET","POST"])
 def index1():
@@ -105,14 +106,11 @@ def l():
 
 
 
-@app.route("/Requestee")
-def Donor2():
-    render_template("")
+@app.route("/maps")
+def index3():
+    return render_template('foodbank.html')
 
 
-@app.route("/Registration")
-def Donor():
-    render_template("")
 
 
     
