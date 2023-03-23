@@ -110,7 +110,9 @@ def l():
 def index3():
     return render_template('foodbank.html')
 
-
+@app.route("/tips")
+def index4():
+    return render_template("tips.html")
 
 
     
