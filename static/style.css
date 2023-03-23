@@ -331,3 +331,10 @@ footer .social a img{
 ::-webkit-scrollbar-thumb{
     background: #303054;
 }
+
+
+.modal-dialog {
+    max-width: 500px;
+    margin: 1.75rem 0;
+
+}
